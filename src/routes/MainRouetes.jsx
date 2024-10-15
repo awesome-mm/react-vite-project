@@ -21,8 +21,8 @@ export default function MainRouetes() {
           {/* 평가자 */}
           <Route path="/assessment" element={<AssessmentLogin />} />
           {/* Not Found */}
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );
