@@ -5,6 +5,6 @@ export default configureStore({
   reducer: {
     exemple: exemple.reducer,
   },
-  // devTools: process.env.NODE_ENV !== "production",
-  devTools: true,
+  devTools: import.meta.env.NDOE_ENV !== "production",
+  // devTools: true,
 });
