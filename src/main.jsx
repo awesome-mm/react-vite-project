@@ -5,6 +5,7 @@ import store from "./store/main";
 
 import "./styles/reset.css";
 import "./styles/common.css";
+import "./styles/layout.css";
 import "react-toastify/dist/ReactToastify.css";
 import "react-tooltip/dist/react-tooltip.css";
 import "@/styles/Pretendard-font.css";

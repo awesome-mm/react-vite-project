@@ -1,3 +1,19 @@
-* {
-  font-size: 30px;
+html {
+  font-size: 18px;
+  font-family: "Pretendard", sans-serif;
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Pretendard", sans-serif;
+  color: var(--brand-1);
+}
+
+/* color palette */
+:root {
+  --brand-1: #d93e00;
+  --brand-2: #ff6324;
+  --brand-3: #ffa17b;
+  --brand-4: #ffe3d8;
 }

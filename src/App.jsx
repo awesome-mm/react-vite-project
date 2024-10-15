@@ -6,12 +6,7 @@ import {ToastContainer} from "react-toastify";
 function App() {
   return (
     <BrowserRouter>
-      {/* header */}
-      {/* contents */}
-      <article>
-        <MainRouetes />
-      </article>
-      {/* footer */}
+      <MainRouetes />
       <ToastContainer
         position="top-right" // 알람 위치 지정
         autoClose={3000} // 자동 off 시간

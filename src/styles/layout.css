@@ -1,0 +1,60 @@
+:root {
+  /* user */
+  --user-header-margin-top: 60px;
+  --user-haeder-height: 60px;
+
+  --user-footer-height: 60px;
+
+  /* admin */
+  --admin-side-margin: 200px;
+  --admin-side-width: 200px;
+
+  /* assessment */
+}
+
+#user_layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#footer {
+  width: 100%;
+  height: var(--user-footer-height);
+  background-color: aqua;
+}
+
+#admin_layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#admin_layout > div.admin-side-menu {
+  width: var(--admin-side-width);
+  height: 100%;
+  background-color: aqua;
+}
+
+#admin_layout > .conetents {
+  flex: 1;
+  height: 100%;
+  background-color: blue;
+}
+
+#assessment_layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#contents {
+  overflow: hidden;
+  background-color: rgb(174, 103, 169);
+  overflow-y: auto;
+  padding: 1rem;
+  min-height: 600px;
+}
