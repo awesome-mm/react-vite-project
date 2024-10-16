@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {USER_HEADER_ROUTES} from "@/constants/UserRoutes";
+import {USER_HEADER_ROUTES} from "@/constants/userRoutes";
 import UserHeaderListItem from "./UserHeaderListItem.jsx";
 import {useNavigate} from "react-router-dom";
 import "./UserHeader.css";
@@ -38,22 +38,34 @@ export default function UserHeader() {
   };
   return (
     <div className="user_header" id="user_header">
-      <ul className="menu_box">
-        {USER_HEADER_ROUTES?.map((headerItem, idx) => (
-          // gnb snb 네비게이션
-          <UserHeaderListItem
-            key={headerItem.title}
-            headerItem={headerItem}
-            idx={idx}
-            // isMobile={isMobile}
-            // isTablet={isTablet}
-            accordion={accordion}
-            handleSub={handleSub} //gnb 클릭
-            handleGnb={handleGnb} //snb 클릭
-          ></UserHeaderListItem>
-        ))}
-        {/* <li>ㅋㅋ</li> */}
-      </ul>
+      <div className="header_wrapper">
+        <ul className="menu_box">
+          {USER_HEADER_ROUTES?.map((headerItem, idx) => (
+            // gnb snb 네비게이션
+            <UserHeaderListItem
+              key={headerItem.title}
+              headerItem={headerItem}
+              idx={idx}
+              // isMobile={isMobile}
+              // isTablet={isTablet}
+              accordion={accordion}
+              handleSub={handleSub} //gnb 클릭
+              handleGnb={handleGnb} //snb 클릭
+            ></UserHeaderListItem>
+          ))}
+          {/* <li>ㅋㅋ</li> */}
+        </ul>
+        <div className="header_auth_box">
+          <ul>
+            <li>
+              <a href="auth/login">로그인</a>
+            </li>
+            <li>
+              <a href="auth/sign">회원가입</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

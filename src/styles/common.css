@@ -7,7 +7,7 @@ body {
   text-align: center;
   font-size: 18px;
   font-family: "Pretendard", sans-serif;
-  color: var(--brand-1);
+  color: #000;
 }
 
 /* color palette */
@@ -16,4 +16,16 @@ body {
   --brand-2: #ff6324;
   --brand-3: #ffa17b;
   --brand-4: #ffe3d8;
+
+  --black-1: #1b1b1b;
+  --black-2: #424242;
+
+  --gray-1: #54575f;
+  --gary-2: #737881;
+  --gary-3: #9a9ea7;
+  --gary-4: #aaafb9;
+  --gary-5: #c4c9d1;
+  --gary-6: #d7dbe3;
+  --gary-7: #dfe4ea;
+  --gary-8: #eef1f4;
 }

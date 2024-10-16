@@ -4,11 +4,6 @@
   --user-haeder-height: 60px;
 
   --user-footer-height: 60px;
-
-  /* admin */
-  --admin-side-margin: 200px;
-  --admin-side-width: 200px;
-
   /* assessment */
 }
 
@@ -25,25 +20,6 @@
   background-color: aqua;
 }
 
-#admin_layout {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#admin_layout > div.admin-side-menu {
-  width: var(--admin-side-width);
-  height: 100%;
-  background-color: aqua;
-}
-
-#admin_layout > .conetents {
-  flex: 1;
-  height: 100%;
-  background-color: blue;
-}
-
 #assessment_layout {
   position: relative;
   display: flex;
@@ -55,6 +31,7 @@
   overflow: hidden;
   background-color: rgb(174, 103, 169);
   overflow-y: auto;
+  margin-top: var(--user-haeder-height);
   padding: 1rem;
   min-height: 600px;
 }
